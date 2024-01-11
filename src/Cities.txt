@@ -1,0 +1,1069 @@
+Buenos Aires, Argentina
+Nairobi, Kenya
+Bangkok, Thailand
+Barcelona, Spain
+Dubai, United Arab Emirates
+Vancouver, Canada
+Amsterdam, Netherlands
+Jakarta, Indonesia
+Rome, Italy
+Singapore City, Singapore
+Auckland, New Zealand
+Mexico City, Mexico
+Stockholm, Sweden
+Istanbul, Turkey
+Zurich, Switzerland
+Prague, Czech Republic
+Warsaw, Poland
+Budapest, Hungary
+Vienna, Austria
+Helsinki, Finland
+Copenhagen, Denmark
+Kuala Lumpur, Malaysia
+Dublin, Ireland
+Oslo, Norway
+San Francisco, USA
+Shanghai, China
+Los Angeles, USA
+Chicago, USA
+Houston, USA
+Dallas, USA
+Miami, USA
+Seattle, USA
+Berlin, Germany
+Munich, Germany
+Frankfurt, Germany
+Hamburg, Germany
+Doha, Qatar
+Riyadh, Saudi Arabia
+Johannesburg, South Africa
+Casablanca, Morocco
+Cairo, Egypt
+Tehran, Iran
+Tel Aviv, Israel
+Athens, Greece
+Lisbon, Portugal
+Porto, Portugal
+Bucharest, Romania
+Sofia, Bulgaria
+Belgrade, Serbia
+Zagreb, Croatia
+Warsaw, Poland
+Krakow, Poland
+Prague, Czech Republic
+Bratislava, Slovakia
+Ljubljana, Slovenia
+Riga, Latvia
+Vilnius, Lithuania
+Tallinn, Estonia
+Kiev, Ukraine
+Minsk, Belarus
+Tbilisi, Georgia
+Yerevan, Armenia
+Baku, Azerbaijan
+Nur-Sultan, Kazakhstan
+Almaty, Kazakhstan
+Ashgabat, Turkmenistan
+Tashkent, Uzbekistan
+Bishkek, Kyrgyzstan
+Dushanbe, Tajikistan
+Astana, Kazakhstan
+Kabul, Afghanistan
+Islamabad, Pakistan
+Lahore, Pakistan
+Karachi, Pakistan
+Dhaka, Bangladesh
+Colombo, Sri Lanka
+Kathmandu, Nepal
+Thimphu, Bhutan
+Male, Maldives
+Ulaanbaatar, Mongolia
+Beijing, China
+Shanghai, China
+Guangzhou, China
+Shenzhen, China
+Hong Kong, China
+Taipei, Taiwan
+Seoul, South Korea
+Pyongyang, North Korea
+Tokyo, Japan
+Osaka, Japan
+Manila, Philippines
+Jakarta, Indonesia
+Bandung, Indonesia
+Surabaya, Indonesia
+Kuala Lumpur, Malaysia
+Penang, Malaysia
+Singapore City, Singapore
+Bangkok, Thailand
+Chiang Mai, Thailand
+Hanoi, Vietnam
+Ho Chi Minh City, Vietnam
+Phnom Penh, Cambodia
+Vientiane, Laos
+Yangon, Myanmar
+Naypyidaw, Myanmar
+Phuket, Thailand
+Siem Reap, Cambodia
+Luang Prabang, Laos
+Hoi An, Vietnam
+Da Nang, Vietnam
+Nha Trang, Vietnam
+Kuala Lumpur, Malaysia
+Kota Kinabalu, Malaysia
+Kuching, Malaysia
+Brunei Darussalam, Brunei
+Bandar Seri Begawan, Brunei
+Jakarta, Indonesia
+Bali, Indonesia
+Denpasar, Indonesia
+Semarang, Indonesia
+Medan, Indonesia
+Padang, Indonesia
+Palembang, Indonesia
+Pontianak, Indonesia
+Surakarta, Indonesia
+Bandar Lampung, Indonesia
+Balikpapan, Indonesia
+Banjarmasin, Indonesia
+Samarinda, Indonesia
+Tarakan, Indonesia
+Palu, Indonesia
+Kendari, Indonesia
+Makassar, Indonesia
+Palopo, Indonesia
+Manado, Indonesia
+Gorontalo, Indonesia
+Ambon, Indonesia
+Ternate, Indonesia
+Tidore, Indonesia
+Kupang, Indonesia
+Mataram, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Kefamenanu, Indonesia
+Atambua, Indonesia
+Lewoleba, Indonesia
+Larantuka, Indonesia
+Baucau, Timor-Leste
+Dili, Timor-Leste
+Atauro, Timor-Leste
+Lospalos, Timor-Leste
+Same, Timor-Leste
+Maliana, Timor-Leste
+Suai, Timor-Leste
+Ainaro, Timor-Leste
+Gleno, Timor-Leste
+Viqueque, Timor-Leste
+Liquiçá, Timor-Leste
+Ermera, Timor-Leste
+Manatuto, Timor-Leste
+Baucau, Timor-Leste
+Dili, Timor-Leste
+Aileu, Timor-Leste
+Ainaro, Timor-Leste
+Covalima, Timor-Leste
+Oecusse, Timor-Leste
+Lautém, Timor-Leste
+Bobonaro, Timor-Leste
+Manufahi, Timor-Leste
+Manatuto, Timor-Leste
+Viqueque, Timor-Leste
+Liquiçá, Timor-Leste
+Ermera, Timor-Leste
+Dili, Timor-Leste
+Aileu, Timor-Leste
+Baucau, Timor-Leste
+Cova Lima, Timor-Leste
+Díli, Timor-Leste
+Ermera, Timor-Leste
+Lautém, Timor-Leste
+Liquiçá, Timor-Leste
+Manatuto, Timor-Leste
+Manufahi, Timor-Leste
+Oecusse, Timor-Leste
+Viqueque, Timor-Leste
+Solo, Indonesia
+Yogyakarta, Indonesia
+Surabaya, Indonesia
+Bandung, Indonesia
+Jakarta, Indonesia
+Tangerang, Indonesia
+Bekasi, Indonesia
+Depok, Indonesia
+Bogor, Indonesia
+Cirebon, Indonesia
+Semarang, Indonesia
+Surakarta, Indonesia
+Yogyakarta, Indonesia
+Madiun, Indonesia
+Malang, Indonesia
+Surabaya, Indonesia
+Denpasar, Indonesia
+Mataram, Indonesia
+Kupang, Indonesia
+Kefamenanu, Indonesia
+Atambua, Indonesia
+Larantuka, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Kupang, Indonesia
+Atambua, Indonesia
+Larantuka, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Waingapu, Indonesia
+Ruteng, Indonesia
+Ende, Indonesia
+Maumere, Indonesia
+Bima, Indonesia
+Los Angeles, USA
+Shanghai, China
+Dubai, United Arab Emirates
+Buenos Aires, Argentina
+Rome, Italy
+Mexico City, Mexico
+Bangkok, Thailand
+Barcelona, Spain
+Lagos, Nigeria
+Vancouver, Canada
+Amsterdam, Netherlands
+Kuala Lumpur, Malaysia
+Johannesburg, South Africa
+Singapore
+Chicago, USA
+Jakarta, Indonesia
+Vienna, Austria
+Auckland, New Zealand
+San Francisco, USA
+Lima, Peru
+Helsinki, Finland
+Oslo, Norway
+Copenhagen, Denmark
+Dublin, Ireland
+Warsaw, Poland
+Prague, Czech Republic
+Budapest, Hungary
+Stockholm, Sweden
+Zurich, Switzerland
+Helsinki, Finland
+Manila, Philippines
+Warsaw, Poland
+Delhi, India
+Hanoi, Vietnam
+Bogotá, Colombia
+Riyadh, Saudi Arabia
+Doha, Qatar
+Santiago, Chile
+Cairo, Egypt
+Nairobi, Kenya
+Tehran, Iran
+Casablanca, Morocco
+Dhaka, Bangladesh
+Montreal, Canada
+Istanbul, Turkey
+Munich, Germany
+Frankfurt, Germany
+Luxembourg City, Luxembourg
+Athens, Greece
+Seoul, South Korea
+Manila, Philippines
+Chennai, India
+Brasília, Brazil
+Caracas, Venezuela
+Oslo, Norway
+Kuala Lumpur, Malaysia
+Mumbai, India
+Riyadh, Saudi Arabia
+Tel Aviv, Israel
+Buenos Aires, Argentina
+Casablanca, Morocco
+Karachi, Pakistan
+Istanbul, Turkey
+Cairo, Egypt
+Toronto, Canada
+Berlin, Germany
+Madrid, Spain
+Moscow, Russia
+Sydney, Australia
+Melbourne, Australia
+Rio de Janeiro, Brazil
+Bogotá, Colombia
+Lima, Peru
+Johannesburg, South Africa
+Lagos, Nigeria
+Accra, Ghana
+Nairobi, Kenya
+Addis Ababa, Ethiopia
+Dakar, Senegal
+Algiers, Algeria
+Tunis, Tunisia
+Reykjavik, Iceland
+Helsinki, Finland
+Copenhagen, Denmark
+Stockholm, Sweden
+Oslo, Norway
+Warsaw, Poland
+Prague, Czech Republic
+Budapest, Hungary
+Vienna, Austria
+Zurich, Switzerland
+Geneva, Switzerland
+Brussels, Belgium
+Amsterdam, Netherlands
+Luxembourg City, Luxembourg
+Dublin, Ireland
+London, United Kingdom
+Edinburgh, United Kingdom
+Cardiff, United Kingdom
+Belfast, United Kingdom
+Paris, France
+Marseille, France
+Lyon, France
+Nice, France
+Barcelona, Spain
+Madrid, Spain
+Valencia, Spain
+Seville, Spain
+Lisbon, Portugal
+Porto, Portugal
+Athens, Greece
+Thessaloniki, Greece
+Istanbul, Turkey
+Ankara, Turkey
+Izmir, Turkey
+Antalya, Turkey
+Adana, Turkey
+Bursa, Turkey
+Dubai, United Arab Emirates
+Abu Dhabi, United Arab Emirates
+Sharjah, United Arab Emirates
+Riyadh, Saudi Arabia
+Jeddah, Saudi Arabia
+Mecca, Saudi Arabia
+Medina, Saudi Arabia
+Doha, Qatar
+Al Rayyan, Qatar
+Kuwait City, Kuwait
+Muscat, Oman
+Manama, Bahrain
+Amman, Jordan
+Beirut, Lebanon
+Damascus, Syria
+Aleppo, Syria
+Baghdad, Iraq
+Erbil, Iraq
+Tehran, Iran
+Isfahan, Iran
+Mashhad, Iran
+Tabriz, Iran
+Shiraz, Iran
+Karachi, Pakistan
+Lahore, Pakistan
+Islamabad, Pakistan
+Rawalpindi, Pakistan
+Faisalabad, Pakistan
+Multan, Pakistan
+Peshawar, Pakistan
+Quetta, Pakistan
+Kabul, Afghanistan
+Islamabad, Pakistan
+Lahore, Pakistan
+Dhaka, Bangladesh
+Chittagong, Bangladesh
+Khulna, Bangladesh
+Rajshahi, Bangladesh
+Sylhet, Bangladesh
+Yangon, Myanmar
+Mandalay, Myanmar
+Naypyidaw, Myanmar
+Bangkok, Thailand
+Krung Thep, Thailand
+Chiang Mai, Thailand
+Phuket, Thailand
+Pattaya, Thailand
+Hanoi, Vietnam
+Ho Chi Minh City, Vietnam
+Haiphong, Vietnam
+Da Nang, Vietnam
+Can Tho, Vietnam
+Manila, Philippines
+Quezon City, Philippines
+Davao City, Philippines
+Cebu City, Philippines
+Makati, Philippines
+Jakarta, Indonesia
+Surabaya, Indonesia
+Bandung, Indonesia
+Medan, Indonesia
+Semarang, Indonesia
+Taipei, Taiwan
+New Taipei City, Taiwan
+Kaohsiung, Taiwan
+Taichung, Taiwan
+Tainan, Taiwan
+Seoul, South Korea
+Busan, South Korea
+Incheon, South Korea
+Daegu, South Korea
+Daejeon, South Korea
+Gwangju, South Korea
+Ulsan, South Korea
+Suwon, South Korea
+Changwon, South Korea
+Goyang, South Korea
+Seongnam, South Korea
+Bucheon, South Korea
+Anyang, South Korea
+Hwaseong, South Korea
+Ansan, South Korea
+Cheonan, South Korea
+Jeonju, South Korea
+Goyang, South Korea
+Yongin, South Korea
+Suwon, South Korea
+Gwangju, South Korea
+Ulsan, South Korea
+Changwon, South Korea
+Gyeonggi, South Korea
+Gyeongsang, South Korea
+Jeju, South Korea
+Sydney, Australia
+Melbourne, Australia
+Brisbane, Australia
+Perth, Australia
+Adelaide, Australia
+Wellington, New Zealand
+Christchurch, New Zealand
+Hamilton, New Zealand
+Dunedin, New Zealand
+Tauranga, New Zealand
+Napier-Hastings, New Zealand
+Rotorua, New Zealand
+Palmerston North, New Zealand
+Nelson, New Zealand
+New Plymouth, New Zealand
+Whangarei, New Zealand
+Invercargill, New Zealand
+Wollongong, Australia
+Newcastle, Australia
+Gold Coast, Australia
+Canberra, Australia
+Sunshine Coast, Australia
+Hobart, Australia
+Geelong, Australia
+Townsville, Australia
+Cairns, Australia
+Toowoomba, Australia
+Darwin, Australia
+Launceston, Australia
+Ballarat, Australia
+Bendigo, Australia
+Mackay, Australia
+Albury-Wodonga, Australia
+Rockhampton, Australia
+Bundaberg, Australia
+Wagga Wagga, Australia
+Coffs Harbour, Australia
+Shepparton-Mooroopna, Australia
+Mildura, Australia
+Gladstone, Australia
+Geraldton, Australia
+Bathurst, Australia
+Dubbo, Australia
+Nowra-Bomaderry, Australia
+Lismore, Australia
+Kalgoorlie-Boulder, Australia
+Warrnambool, Australia
+Devonport, Australia
+Bunbury, Australia
+Alice Springs, Australia
+Palmerston, Australia
+Mount Gambier, Australia
+Whyalla, Australia
+Armidale, Australia
+Port Macquarie, Australia
+Orange, Australia
+La Trobe Valley, Australia
+Tamworth, Australia
+Traralgon-Morwell, Australia
+Hervey Bay, Australia
+Horsham, Australia
+Wangaratta, Australia
+Bairnsdale, Australia
+Maryborough, Australia
+Roma, Australia
+Muswellbrook, Australia
+Goulburn, Australia
+Albany, Australia
+Karratha, Australia
+Mount Isa, Australia
+Esperance, Australia
+Port Hedland, Australia
+Broome, Australia
+Port Lincoln, Australia
+Geraldton, Australia
+Bridgetown, Australia
+Merredin, Australia
+Collie, Australia
+Kalbarri, Australia
+Exmouth, Australia
+Carnarvon, Australia
+Kununurra, Australia
+Derby, Australia
+Fitzroy Crossing, Australia
+Halls Creek, Australia
+Katherine, Australia
+Tennant Creek, Australia
+Yulara, Australia
+Nhulunbuy, Australia
+Weipa, Australia
+Cooktown, Australia
+Normanton, Australia
+Charleville, Australia
+Cloncurry, Australia
+Kingaroy, Australia
+Proserpine, Australia
+St George, Australia
+Ingham, Australia
+Charters Towers, Australia
+Longreach, Australia
+Mareeba, Australia
+Hughenden, Australia
+Ayr, Australia
+Atherton, Australia
+Bowen, Australia
+Cooktown, Australia
+Emerald, Australia
+Gatton, Australia
+Goondiwindi, Australia
+Home Hill, Australia
+Julia Creek, Australia
+Kilcoy, Australia
+Kyneton, Australia
+Lakeland, Australia
+Longreach, Australia
+Murgon, Australia
+Nanango, Australia
+Oakey, Australia
+Pittsworth, Australia
+Quilpie, Australia
+St George, Australia
+Surat, Australia
+Tara, Australia
+Texas, Australia
+Wandoan, Australia
+Winton, Australia
+Yarraman, Australia
+Chinchilla, Australia
+Crows Nest, Australia
+Esk, Australia
+Goondiwindi, Australia
+Highfields, Australia
+Hodgson Vale, Australia
+Jondaryan, Australia
+Kilcoy, Australia
+Kingsthorpe, Australia
+Laidley, Australia
+Lockyer Waters, Australia
+Lowood, Australia
+Millmerran, Australia
+Milmerran, Australia
+Nobby, Australia
+Pittsworth, Australia
+Oakey, Australia
+Ravensbourne, Australia
+Rosewood, Australia
+Southbrook, Australia
+Springside, Australia
+Tarampa, Australia
+Tara, Australia
+Toowoomba, Australia
+Westbrook, Australia
+Withcott, Australia
+Wyreema, Australia
+Yarraman, Australia
+Allora, Australia
+Bell, Australia
+Clifton, Australia
+Crows Nest, Australia
+Dalby, Australia
+Goombungee, Australia
+Greenmount, Australia
+Highfields, Australia
+Hodgson Vale, Australia
+Inglewood, Australia
+Jondaryan, Australia
+Laidley, Australia
+Leyburn, Australia
+Millmerran, Australia
+Nobby, Australia
+Oakey, Australia
+Pittsworth, Australia
+Quilpie, Australia
+Ravensbourne, Australia
+Rosewood, Australia
+Stanthorpe, Australia
+Southbrook, Australia
+Springside, Australia
+Surat, Australia
+Tara, Australia
+Texas, Australia
+Toowoomba, Australia
+Wandoan, Australia
+Westbrook, Australia
+Withcott, Australia
+Wyreema, Australia
+Yarraman, Australia
+Charleville, Australia
+Cunnamulla, Australia
+Dirranbandi, Australia
+Goondiwindi, Australia
+Hebel, Australia
+Inglewood, Australia
+Miles, Australia
+Mitchell, Australia
+Morven, Australia
+Mungindi, Australia
+St George, Australia
+Surat, Australia
+Tara, Australia
+Thallon, Australia
+Toobeah, Australia
+Wallangarra, Australia
+Wyandra, Australia
+Yarraman, Australia
+Yelarbon, Australia
+Yuleba, Australia
+Yungaburra, Australia
+Zilzie, Australia
+Zwingle, United States
+Zephyr Cove-Round Hill Village, United States
+Zumbro Falls, United States
+Zillah, United States
+Zanesville, United States
+Zimmerman, United States
+Zuni Pueblo, United States
+Zebulon, United States
+Zeeland, United States
+Zap, United States
+Zavalla, United States
+Zwolle, United States
+Zearing, United States
+Zillah, United States
+Zumbrota, United States
+Zephyrhills, United States
+Zolfo Springs, United States
+Zephyr, Canada
+Zeeland, Netherlands
+Zutphen, Netherlands
+Zwolle, Netherlands
+Zagreb, Croatia
+Zadar, Croatia
+Zlatograd, Bulgaria
+Zalau, Romania
+Zvolen, Slovakia
+Zurich, Switzerland
+Zermatt, Switzerland
+Zofingen, Switzerland
+Zug, Switzerland
+Znojmo, Czech Republic
+Zlin, Czech Republic
+Zilina, Slovakia
+Zakopane, Poland
+Zamosc, Poland
+Zyrardow, Poland
+Zabrze, Poland
+Zielona Gora, Poland
+Zalau, Romania
+Zrenjanin, Serbia
+Zenica, Bosnia and Herzegovina
+Zadar, Croatia
+Zadar, India
+Zvishavane, Zimbabwe
+Zhuhai, China
+Zhangzhou, China
+Zhengzhou, China
+Zhongshan, China
+Zhuji, China
+Zibo, China
+Zunyi, China
+Zaozhuang, China
+Zigong, China
+Zhangjiakou, China
+Zhanjiang, China
+Zhaoqing, China
+Zhoushan, China
+Zhuhai, China
+Zhoukou, China
+Zhumadian, China
+Zhengzhou, China
+Zhoukou, China
+Zhuzhou, China
+Zunyi, China
+Cairo, Egypt
+Alexandria, Egypt
+Giza, Egypt
+Nairobi, Kenya
+Mombasa, Kenya
+Kisumu, Kenya
+Eldoret, Kenya
+Dar es Salaam, Tanzania
+Dodoma, Tanzania
+Arusha, Tanzania
+Zanzibar City, Tanzania
+Kampala, Uganda
+Entebbe, Uganda
+Jinja, Uganda
+Accra, Ghana
+Kumasi, Ghana
+Tamale, Ghana
+Lagos, Nigeria
+Abuja, Nigeria
+Kano, Nigeria
+Ibadan, Nigeria
+Cairo, Egypt
+Alexandria, Egypt
+Nairobi, Kenya
+Mombasa, Kenya
+Kisumu, Kenya
+Eldoret, Kenya
+Dar es Salaam, Tanzania
+Dodoma, Tanzania
+Arusha, Tanzania
+Zanzibar City, Tanzania
+Kampala, Uganda
+Entebbe, Uganda
+Jinja, Uganda
+Accra, Ghana
+Kumasi, Ghana
+Tamale, Ghana
+Lagos, Nigeria
+Abuja, Nigeria
+Kano, Nigeria
+Ibadan, Nigeria
+Addis Ababa, Ethiopia
+Dire Dawa, Ethiopia
+Mekelle, Ethiopia
+Adama, Ethiopia
+Cape Town, South Africa
+Johannesburg, South Africa
+Durban, South Africa
+Pretoria, South Africa
+Port Elizabeth, South Africa
+Luanda, Angola
+Huambo, Angola
+Lobito, Angola
+Benguela, Angola
+Lubango, Angola
+Khartoum, Sudan
+Omdurman, Sudan
+Khartoum North, Sudan
+Port Sudan, Sudan
+Nyala, Sudan
+Casablanca, Morocco
+Rabat, Morocco
+Fes, Morocco
+Marrakech, Morocco
+Tangier, Morocco
+Tunis, Tunisia
+Sfax, Tunisia
+Sousse, Tunisia
+Kairouan, Tunisia
+Gabes, Tunisia
+Tripoli, Libya
+Benghazi, Libya
+Misrata, Libya
+Sabha, Libya
+Zawiya, Libya
+Bamako, Mali
+Sikasso, Mali
+Mopti, Mali
+Koutiala, Mali
+Timbuktu, Mali
+Conakry, Guinea
+Nzerekore, Guinea
+Kindia, Guinea
+Kankan, Guinea
+Bissau, Guinea-Bissau
+Bafata, Guinea-Bissau
+Gabu, Guinea-Bissau
+Bissora, Guinea-Bissau
+Monrovia, Liberia
+Gbarnga, Liberia
+Kakata, Liberia
+Bensonville, Liberia
+Tripoli, Liberia
+Freetown, Sierra Leone
+Bo, Sierra Leone
+Kenema, Sierra Leone
+Koidu, Sierra Leone
+Makeni, Sierra Leone
+Abidjan, Ivory Coast
+Bouaké, Ivory Coast
+Daloa, Ivory Coast
+Yamoussoukro, Ivory Coast
+Korhogo, Ivory Coast
+Ouagadougou, Burkina Faso
+Bobo-Dioulasso, Burkina Faso
+Koudougou, Burkina Faso
+Ouahigouya, Burkina Faso
+Banjul, Gambia
+Serekunda, Gambia
+Brikama, Gambia
+Bakau, Gambia
+Serrekunda, Gambia
+Bamako, Mali
+Sikasso, Mali
+Mopti, Mali
+Koutiala, Mali
+Timbuktu, Mali
+Nouakchott, Mauritania
+Nouadhibou, Mauritania
+Rosso, Mauritania
+Kiffa, Mauritania
+Zouerate, Mauritania
+Windhoek, Namibia
+Walvis Bay, Namibia
+Swakopmund, Namibia
+Rundu, Namibia
+Oshakati, Namibia
+Niamey, Niger
+Zinder, Niger
+Maradi, Niger
+Agadez, Niger
+Tahoua, Niger
+Lagos, Nigeria
+Kano, Nigeria
+Ibadan, Nigeria
+Kaduna, Nigeria
+Port Harcourt, Nigeria
+Abuja, Nigeria
+Aba, Nigeria
+Ogbomosho, Nigeria
+Niamey, Niger
+Zinder, Niger
+Maradi, Niger
+Agadez, Niger
+Tahoua, Niger
+Asmara, Eritrea
+Keren, Eritrea
+Massawa, Eritrea
+Assab, Eritrea
+Barentu, Eritrea
+Asmara, Eritrea
+Keren, Eritrea
+Massawa, Eritrea
+Assab, Eritrea
+Barentu, Eritrea
+Dodoma, Tanzania
+Arusha, Tanzania
+Mbeya, Tanzania
+Morogoro, Tanzania
+Tanga, Tanzania
+Kigali, Rwanda
+Butare, Rwanda
+Gitarama, Rwanda
+Ruhengeri, Rwanda
+Gisenyi, Rwanda
+Juba, South Sudan
+Wau, South Sudan
+Malakal, South Sudan
+Yei, South Sudan
+Aweil, South Sudan
+Monrovia, Liberia
+Gbarnga, Liberia
+Kakata, Liberia
+Bensonville, Liberia
+Harper, Liberia
+Mogadishu, Somalia
+Hargeisa, Somalia
+Berbera, Somalia
+Kismayo, Somalia
+Marka, Somalia
+Khartoum, Sudan
+Omdurman, Sudan
+Khartoum North, Sudan
+Port Sudan, Sudan
+Nyala, Sudan
+Tunis, Tunisia
+Sfax, Tunisia
+Sousse, Tunisia
+Kairouan, Tunisia
