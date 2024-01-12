@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Genetic_Algorithm {
     private List<Chromosome> Population = new ArrayList<>();
-    private List<String> newPopulation;
+    private List<Chromosome> newPopulation;
     private final int popSize;
     private final float crossoverRate;
     private final float mutationRate;
@@ -41,15 +41,15 @@ public class Genetic_Algorithm {
             newPopulation = new ArrayList<>();
             //generate fitness of each chromosome
             for (Chromosome chromosome : Population) {
-                chromosome.setFitness(Evaluation.fitness(chromosome.getPath(), cities));
+                chromosome.setFitness(FitnessFunction.Evalute(chromosome.getPath()));
             }
             Population = new ArrayList<>(sortPop(Population));
             // output current best chromosome
-            System.out.println(Population.get(0).getPath()+" Generation "+i+" "+Population.get(0).getFitness());
+            System.out.println(Population.get(0).getPath()+" Generation "+i+" "+Population.get(0).getFitness()+" "+Population.get(0).getDistance());
             //implement elitism
             newPopulation.addAll(elitismPop(Population));
             //Tournament Selection
-            List<String> tempPopulation = new ArrayList<>(tournamentSelect(Population, TSrate));
+            List<Chromosome> tempPopulation = new ArrayList<>(tournamentSelect(Population, TSrate));
 
             //Perform uniformCrossover and mutation
             uniformCrossoverMutation(tempPopulation, crossoverRate, mutationRate);
@@ -57,13 +57,13 @@ public class Genetic_Algorithm {
             //updating population for new generation
             for(int ch = 0; ch< Population.size(); ch++)
             {
-                Population.get(ch).setPath(newPopulation.get(ch));
+                Population.get(ch).setPath(newPopulation.get(ch).getPath());
             }
         }
     }
 
     // Uniform Crossover
-    private void uniformCrossoverMutation(List<String> newPop, float CO_Rate, float M_Rate) {
+    private void uniformCrossoverMutation(List<Chromosome> newPop, float CO_Rate, float M_Rate) {
         double rand;
         int i2 = 1;
         int i1;
@@ -71,7 +71,7 @@ public class Genetic_Algorithm {
         {
             i1=i2-1;
             //ensures same parents are not used for crossover
-            while (newPop.get(i1).equals(newPop.get(i2)))
+            while (equalChromosome(newPop.get(i1),newPop.get(i2)))
                 i1=r.nextInt(newPop.size());
 
             StringBuilder c1 = new StringBuilder();
@@ -115,6 +115,14 @@ public class Genetic_Algorithm {
 
             i2+=2;
         }
+    }
+
+    private boolean equalChromosome(Chromosome chromosome, Chromosome chromosome1) {
+        for(int ch =0; ch<chromosome.getPath().size(); ch++){
+            if(chromosome.getPath().get(ch).getX_axis()!=chromosome1.getPath().get(ch).getX_axis()||chromosome.getPath().get(ch).getY_axis()!=chromosome1.getPath().get(ch).getY_axis())
+                return false;
+        }
+        return true;
     }
 
     //Perform mutation by changing 2 random character
@@ -165,14 +173,14 @@ public class Genetic_Algorithm {
     }
 
     //sort and return 1% of the best chromosome as string
-    private  ArrayList<String> elitismPop( List<Chromosome> population2){
+    private  ArrayList<Chromosome> elitismPop( List<Chromosome> population2){
 
         int rate = (int) (population2.size()*0.01);
         int counter = 0;
-        ArrayList<String> elitismPopulation = new ArrayList<>();
+        ArrayList<Chromosome> elitismPopulation = new ArrayList<>();
         for(Chromosome x: population2)
         {
-            elitismPopulation.add(x.getPath());
+            elitismPopulation.add(new Chromosome(x.getPath(),x.getFitness()));
             counter++;
             if(counter==rate)
                 break;
@@ -195,9 +203,9 @@ public class Genetic_Algorithm {
     }
 
     //Perform tournament selection
-    private ArrayList<String> tournamentSelect(List<Chromosome> population, int rate)
+    private ArrayList<Chromosome> tournamentSelect(List<Chromosome> population, int rate)
     {
-        ArrayList<String> TSpop = new ArrayList<>();
+        ArrayList<Chromosome> TSpop = new ArrayList<>();
         List<Chromosome> temp;
 
         for(int i = 0; i < Population.size(); i++) {
@@ -205,7 +213,8 @@ public class Genetic_Algorithm {
             for(int k = 0; k < rate; k++) {
                 temp.add(population.get(r.nextInt(population.size())));
             }
-            TSpop.add(sortPop(temp).get(0).getPath());
+            temp=sortPop(temp);
+            TSpop.add(new Chromosome(temp.get(0).getPath(),temp.get(0).getFitness()));
         }
         return TSpop;
     }

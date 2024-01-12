@@ -1,5 +1,6 @@
 package GP_Package;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class FitnessFunction {
@@ -30,14 +31,14 @@ public class FitnessFunction {
         }
     }
 
-    public static double Evalute(ArrayList<City> cities){
+    public static double[] Evalute(ArrayList<City> cities){
          ArrayList<City> path = new ArrayList<>(cities);
          double totalDistance = 0;
          for (int i =0; i< path.size()-1; i++)
          {
              totalDistance+= EuclideanDistance(path.get(i), path.get(i+1));
          }
-         return (totalDistance-estimatedOptimalDistance)/(worstTravelledDistance-estimatedOptimalDistance);
+         return new double[]{totalDistance, (totalDistance - estimatedOptimalDistance) / (worstTravelledDistance - estimatedOptimalDistance)};
     }
 
     private static double EuclideanDistance(City city, City city1) {
