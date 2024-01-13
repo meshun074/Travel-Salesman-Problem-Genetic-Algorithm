@@ -7,8 +7,7 @@ public class Main {
         //Start Genetic algorithm by taking as input,
         // population size, Tournament selection rate, crossover rate, mutation rate and
         // number of generations and the file with the encrypted text.
-        Genetic_Algorithm ga1 = new Genetic_Algorithm(500,4, 1.0F,0.1F,118,"data1.txt");
+        Genetic_Algorithm ga1 = new Genetic_Algorithm(400,4, 1.0F,0.1F,120,"data1.txt");
         ga1.start_GA();
-        System.out.println("jakjlksjllj");
     }
 }

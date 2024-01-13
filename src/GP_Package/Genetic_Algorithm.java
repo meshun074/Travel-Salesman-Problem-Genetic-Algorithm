@@ -16,7 +16,7 @@ public class Genetic_Algorithm {
     private final File file;
     private static int chromosomeLength;
     private final Random r = new Random();
-    private static int oi=0;
+
 
     public Genetic_Algorithm(int popSize, int TSrate, float crossoverRate, float mutationRate, int Gen, String filename) {
         this.popSize = popSize;
@@ -77,8 +77,13 @@ public class Genetic_Algorithm {
             ch1 = new ArrayList<>(List.of(newPop.get(i1).getPath().split(",")));
             ch2 = new ArrayList<>(List.of(newPop.get(i2).getPath().split(",")));
             //ensures same parents are not used for crossover
-            while (equalChromosome(newPop.get(i1),newPop.get(i2)))
-                i1=r.nextInt(newPop.size());
+            int check = 0;
+            while (equalChromosome(newPop.get(i1),newPop.get(i2))) {
+                i1 = r.nextInt(newPop.size());
+                if(check>newPop.size()/10)
+                    break;
+                check++;
+            }
             c1 = new ArrayList<>();
             c2 = new ArrayList<>();
 //			Crossover rate
@@ -94,33 +99,14 @@ public class Genetic_Algorithm {
                         c2.add(ch2.get(c));
                     }
                 }
-//                if(oi<1) {
-//                    System.out.println("yeeeeeeeeeeee2b " + ch1 + "------");
-//                    System.out.println("yeeeeeeeeeeee2b " + ch2 + "------");
-//                }
-//                if(oi<1) {
-//                    System.out.println("yeeeeeeeeeeee2b " + c1 + "------");
-//                    System.out.println("yeeeeeeeeeeee2b " + c2 + "------");
-//                }
-
                 repair(c1, ch2);
                 repair(c2, ch1);
 
-//                if(oi<1) {
-//                    System.out.println("yeeeeeeeeeeee2c " + c1 + "------" +newPop.get(i2).getPath());
-//                    System.out.println("yeeeeeeeeeeee2c " + c2 + "------" +newPop.get(i1).getPath());
-//                }
-//                oi++;
             }
             //mutationRate
             if (Math.random() < M_Rate) {
-                if(oi<1)
-                    System.out.println("yeeeeeeeeeeee1 "+ c1+"------");
                 if (c1.isEmpty()) c1 = new ArrayList<>(ch1);
                 Mutation(c1);
-                if(oi<1)
-                    System.out.println("yeeeeeeeeeeee2 "+ c1+"------");
-                oi++;
             }
 
             if (Math.random() < M_Rate) {
