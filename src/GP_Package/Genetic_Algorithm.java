@@ -16,6 +16,7 @@ public class Genetic_Algorithm {
     private final File file;
     private static int chromosomeLength;
     private final Random r = new Random();
+    private final ArrayList<Double> generationDistance;
 
     public Genetic_Algorithm(int popSize, int TSrate, float crossoverRate, float mutationRate, int Gen, String filename) {
         this.popSize = popSize;
@@ -24,6 +25,7 @@ public class Genetic_Algorithm {
         this.mutationRate = mutationRate;
         this.Gen = Gen;
         file = new File(System.getProperty("user.dir") + "\\src\\" + filename);
+        generationDistance=new ArrayList<>();
     }
     public void start_GA() {
         // get the encrypted text int the file
@@ -32,16 +34,19 @@ public class Genetic_Algorithm {
         //Initialize population
         InitializePopulation pop = new InitializePopulation(popSize, chromosomeLength);
         Population = pop.generate();
+        //generate fitness of each chromosome
+        for (Chromosome chromosome : Population) {
+            chromosome.setFitness(FitnessFunction.Evalute(chromosome.getPath(), cities));
+        }
+        // Sort Population
+        Population = new ArrayList<>(sortPop(Population));
+        // output current best chromosome
+        //System.out.println(" Generation " + 0 + " " + Population.get(0).getFitness());
+        System.out.println(Population.get(0).getFitness());
+        generationDistance.add(Population.get(0).getFitness());
         // start generation
-        for (int i = 0; i < Gen; i++) {
+        for (int i = 1; i <= Gen; i++) {
             newPopulation = new ArrayList<>();
-            //generate fitness of each chromosome
-            for (Chromosome chromosome : Population) {
-                chromosome.setFitness(FitnessFunction.Evalute(chromosome.getPath(), cities));
-            }
-            Population = new ArrayList<>(sortPop(Population));
-            // output current best chromosome
-            System.out.println(" Generation " + i + " " + Population.get(0).getFitness());
             //implement elitism
             newPopulation.addAll(elitismPop(Population));
             //Tournament Selection
@@ -52,7 +57,17 @@ public class Genetic_Algorithm {
             for (int ch = 0; ch < Population.size(); ch++) {
                 Population.get(ch).setPath(newPopulation.get(ch).getPath());
             }
+            //generate fitness of each chromosome
+            for (Chromosome chromosome : Population) {
+                chromosome.setFitness(FitnessFunction.Evalute(chromosome.getPath(), cities));
+            }
+            Population = new ArrayList<>(sortPop(Population));
+            // output current best chromosome
+//            System.out.println(" Generation " + i + " " + Population.get(0).getFitness());
+            System.out.println(Population.get(0).getFitness());
+            generationDistance.add(Population.get(0).getFitness());
         }
+        LineGraph.DrawLineGraph(generationDistance);
     }
 
     // Uniform Crossover

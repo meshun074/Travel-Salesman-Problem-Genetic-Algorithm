@@ -9,8 +9,11 @@ public class FitnessFunction {
         ArrayList<String> paths = new ArrayList<>(List.of(path.split(",")));
         double totalDistance = 0;
 
-        for (int i =0; i<paths.size()-1; i++) {
-            totalDistance += EuclideanDistance(cities.get(Integer.parseInt(paths.get(i))), cities.get(Integer.parseInt(paths.get(i + 1))));
+        for (int i =0; i<paths.size(); i++) {
+            if(i==paths.size()-1)
+                totalDistance += EuclideanDistance(cities.get(Integer.parseInt(paths.get(i))), cities.get(Integer.parseInt(paths.get(0))));
+            else
+                totalDistance += EuclideanDistance(cities.get(Integer.parseInt(paths.get(i))), cities.get(Integer.parseInt(paths.get(i + 1))));
         }
         return totalDistance;
     }
