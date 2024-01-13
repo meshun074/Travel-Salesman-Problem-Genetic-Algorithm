@@ -2,9 +2,9 @@ package GP_Package;
 
 public class City {
     private final int index;
-    private String name;
-    private int x_axis;
-    private int y_axis;
+    private final String name;
+    private final int x_axis;
+    private final int y_axis;
 
     public City(int index, String name, int x_axis, int y_axis) {
         this.name = name;
@@ -13,12 +13,12 @@ public class City {
         this.index= index;
     }
 
-//    public int getIndex() {
-//        return index;
-//    }
-//    public String getName() {
-//        return name;
-//    }
+    public int getIndex() {
+        return index;
+    }
+    public String getName() {
+        return name;
+    }
 
 
     public int getX_axis() {
