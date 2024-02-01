@@ -41,6 +41,8 @@ public class Genetic_Algorithm {
         Population = new ArrayList<>(sortPop(Population));
         // output current best chromosome
         System.out.println(" Generation " + 0 + " " + Population.get(0).getFitness());
+        // Drawing initial 2D view of TSP
+        City_Line_Chart.DrawChart(new ArrayList<>(List.of(Population.get(0).getPath().split(","))), cities,"Generation 1 2D view of Travel Salesman Problem");
         generationDistance.add(Population.get(0).getFitness());
         // start generation
         for (int i = 1; i <= Gen; i++) {
@@ -65,6 +67,11 @@ public class Genetic_Algorithm {
             //Store generation best in an array for making future graph.
             generationDistance.add(Population.get(0).getFitness());
         }
+        //Draws the final 2D view of the TSP
+        City_Line_Chart.DrawChart(new ArrayList<>(List.of(Population.get(0).getPath().split(","))), cities, "Generation "+Gen+" 2D view of Travel Salesman Problem");
+        //Draws line chart of best distance to generation
+        LineChart.DrawChart(generationDistance);
+
     }
 
     // Uniform Crossover
