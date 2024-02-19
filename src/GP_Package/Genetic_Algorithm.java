@@ -12,35 +12,40 @@ public class Genetic_Algorithm {
     private final float mutationRate;
     private final int Gen;
     private final int TSrate;
+    private final float elitism;
     private final File file;
     private static int chromosomeLength;
     private final Random r = new Random();
     private final ArrayList<Double> generationDistance;
 
-    public Genetic_Algorithm(int popSize, int TSrate, float crossoverRate, float mutationRate, int Gen, String filename) {
+    public Genetic_Algorithm(int popSize, int TSrate, float crossoverRate, float mutationRate, float elitism, int Gen, String filename) {
         this.popSize = popSize;
         this.TSrate = TSrate;
         this.crossoverRate = crossoverRate;
         this.mutationRate = mutationRate;
+        this.elitism=elitism;
         this.Gen = Gen;
-        file = new File(System.getProperty("user.dir") + "\\src\\" + filename);
+        file = new File(System.getProperty("user.dir") + "/src/" + filename);
         generationDistance=new ArrayList<>();
     }
     public void start_GA() {
         // get the cities points store in data1.txt file
         ArrayList<City> cities = getData(file);
         chromosomeLength = cities.size();
+        double averageFitness=0.0;
         //Initialize population
         InitializePopulation pop = new InitializePopulation(popSize, chromosomeLength);
         Population = pop.generate();
         //generate fitness of each chromosome
         for (Chromosome chromosome : Population) {
-            chromosome.setFitness(FitnessFunction.Evalute(chromosome.getPath(), cities));
+            chromosome.setFitness(FitnessFunction.Evaluate(chromosome.getPath(), cities));
+            averageFitness+=chromosome.getFitness();
         }
         // Sort Population
         Population = new ArrayList<>(sortPop(Population));
         // output current best chromosome
-        System.out.println(" Generation " + 0 + " " + Population.get(0).getFitness());
+        System.out.println( 0 + " " + Population.get(0).getFitness()+" "+averageFitness/popSize);
+
         // Drawing initial 2D view of TSP
         City_Line_Chart.DrawChart(new ArrayList<>(List.of(Population.get(0).getPath().split(","))), cities,"Generation 1 2D view of Travel Salesman Problem");
         generationDistance.add(Population.get(0).getFitness());
@@ -48,9 +53,9 @@ public class Genetic_Algorithm {
         for (int i = 1; i <= Gen; i++) {
             newPopulation = new ArrayList<>();
             //implement elitism
-            newPopulation.addAll(elitismPop(Population));
+            newPopulation.addAll(elitismPop(Population,elitism));
             //Tournament Selection
-            List<Chromosome> tempPopulation = new ArrayList<>(tournamentSelect(Population, TSrate));
+            List<Chromosome> tempPopulation = new ArrayList<>(tournamentSelect(Population,TSrate));
             //Perform uniformCrossover and mutation
             uniformCrossoverMutation(tempPopulation, crossoverRate, mutationRate);
             //updating population for new generation
@@ -58,20 +63,24 @@ public class Genetic_Algorithm {
                 Population.get(ch).setPath(newPopulation.get(ch).getPath());
             }
             //generate fitness of each chromosome
+            averageFitness=0;
             for (Chromosome chromosome : Population) {
-                chromosome.setFitness(FitnessFunction.Evalute(chromosome.getPath(), cities));
+                chromosome.setFitness(FitnessFunction.Evaluate(chromosome.getPath(), getData(file)));
+                averageFitness+=chromosome.getFitness();
             }
             Population = new ArrayList<>(sortPop(Population));
             // output current best chromosome
-            System.out.println(" Generation " + i + " " + Population.get(0).getFitness());
+            //if(i%500==0||i==Gen)
+                System.out.println( i + " " + Population.get(0).getFitness()+" "+averageFitness/popSize);
+            if(i==Gen)
+                System.out.println( Population.get(0).getPath()+" " + i + " " + Population.get(0).getFitness()+" "+averageFitness/popSize);
             //Store generation best in an array for making future graph.
             generationDistance.add(Population.get(0).getFitness());
         }
         //Draws the final 2D view of the TSP
-        City_Line_Chart.DrawChart(new ArrayList<>(List.of(Population.get(0).getPath().split(","))), cities, "Generation "+Gen+" 2D view of Travel Salesman Problem");
+        City_Line_Chart.DrawChart(new ArrayList<>(List.of(Population.get(0).getPath().split(","))), getData(file), "Generation "+Gen+" 2D view of Travel Salesman Problem");
         //Draws line chart of best distance to generation
         LineChart.DrawChart(generationDistance);
-
     }
 
     // Uniform Crossover
@@ -113,18 +122,12 @@ public class Genetic_Algorithm {
                 repair(c1, ch2);
                 repair(c2, ch1);
             }
-            //mutationRate
-            if (Math.random() < M_Rate) {
-                //checks if crossover occurred
-                if (c1.isEmpty()) c1 = new ArrayList<>(ch1);
-                Mutation(c1);
-            }
-            if (Math.random() < M_Rate) {
-                if (c2.isEmpty()) {
-                    c2 = new ArrayList<>(ch2);
-                }
-                Mutation(c2);
-            }
+            //mutation
+            //checks if crossover occurred
+            if (c1.isEmpty()) c1 = new ArrayList<>(ch1);
+            Mutation(c1,M_Rate);
+            if (c2.isEmpty()) c2 = new ArrayList<>(ch2);
+            Mutation(c2,M_Rate);
             //check if crossover and mutation occur
             //check if new population is full
             //if c1( chromosome) is empty, then neither crossover or mutation occurred
@@ -165,47 +168,47 @@ public class Genetic_Algorithm {
         return true;
     }
     //Perform mutation by swapping (1 -1/4 of the total) random cities in the chromosome
-    private void Mutation(ArrayList<String> cities) {
-        int num = r.nextInt(1, cities.size() / 4);
+    private void Mutation(ArrayList<String> cities, double rate) {
         int index1;
         int index2;
         String c;
-        for (int i = 0; i < num; i++) {
-            //generate 2 random number and swap
-            do {
-                index1 = r.nextInt(cities.size());
-                index2 = r.nextInt(cities.size());
-            } while (index1 == index2);
-            c = cities.get(index1);
-            cities.set(index1, cities.get(index2));
-            cities.set(index2, c);
+        for (int i = 0; i < cities.size(); i++) {
+            if(Math.random()<rate){
+                //generate 2 random number and swap
+                index1 = i;
+                do {
+                    index2 = r.nextInt(cities.size());
+                } while (index1 == index2);
+                c = cities.get(index1);
+                cities.set(index1, cities.get(index2));
+                cities.set(index2, c);
+            }
         }
     }
 
     //read points from data1.txt file and a random city name from cities.txt file
     //Creates an arraylist of all cities in the data1.txt.
-    private ArrayList<City> getData(File file) {
+    private static ArrayList<City> getData(File file) {
         ArrayList<City> cities = new ArrayList<>();
-        File file1 = new File(System.getProperty("user.dir") + "\\src\\Cities.txt");
         String[] texts;
         City city;
-        int index = 0;
-        try (Scanner sc = new Scanner(file); Scanner sc1 = new Scanner(file1)) {
-            while (sc.hasNext() && sc1.hasNext()) {
+        try (Scanner sc = new Scanner(file)) {
+            while (sc.hasNext()) {
                 texts = sc.nextLine().split(" ");
-                city = new City(index, sc1.nextLine(), Integer.parseInt(texts[0]), Integer.parseInt(texts[1]));
+                city = new City( Double.parseDouble(texts[0]), Double.parseDouble(texts[1]));
                 cities.add(city);
-                index++;
             }
         } catch (FileNotFoundException e) {
-            System.out.println("file not found");
+            System.out.println("file not found " + e);
         }
         return cities;
     }
     //sort and return 1% of the best chromosome as string
-    private ArrayList<Chromosome> elitismPop(List<Chromosome> population2) {
-
-        int rate = (int) (population2.size() * 0.01);
+    private ArrayList<Chromosome> elitismPop(List<Chromosome> population2, float elitism) {
+        //elitism 10%
+        //int rate = (int) (population2.size() * 0.1);
+        int rate = elitism>=1? (int)elitism:(int) (population2.size() * elitism);
+        System.out.println(rate);
         int counter = 0;
         ArrayList<Chromosome> elitismPopulation = new ArrayList<>();
         for (Chromosome x : population2) {
@@ -238,5 +241,33 @@ public class Genetic_Algorithm {
             TSpop.add(new Chromosome(temp.get(0).getPath(), temp.get(0).getFitness()));
         }
         return TSpop;
+    }
+    private static ArrayList<Chromosome> rouletteWheelSelection(List<Chromosome> population) {
+        ArrayList<Chromosome> selectedPopulation = new ArrayList<>();
+        double[] prob = new double[population.size()];
+        double total = 0.0;
+        double rand;
+        //Calculates total fitness
+        for (Chromosome chromosome : population) {
+            total += chromosome.getFitness();
+        }
+        // calculate chromosome probability and cumulative probability frequency
+        for (int i=0; i<prob.length; i++){
+            prob[i]=population.get(i).getFitness()/total;
+            if(i>0){
+                prob[i]+=prob[i-1];
+            }
+        }
+        ///Simulate turning the wheel for selected chromosome
+        for (int k=0; k<population.size(); k++){
+            rand=Math.random();
+            for (int j=0; j<prob.length; j++){
+                if(rand<=prob[j]){
+                    selectedPopulation.add(new Chromosome(population.get(j).getPath(),population.get(j).getFitness()));
+                    break;
+                }
+            }
+        }
+        return selectedPopulation;
     }
 }

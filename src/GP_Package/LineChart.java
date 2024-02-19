@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class LineChart {
     public static void DrawChart(ArrayList<Double> values){
         JFrame frame = new JFrame("Line Graph of Travel Salesman problem");
-        frame.setSize(864,864);
+        frame.setSize(800,864);
         frame.setContentPane(new myLinechartPanel(values));
         frame.addWindowListener(new WindowAdapter() {
             @Override
@@ -43,16 +43,17 @@ class myLinechartPanel extends JPanel{
         gd.drawString("Number of Generations", 350, 800);
         //Vertical line
         gd.drawLine(50,30,50,750);
+
         //vertical label
-        AffineTransform at = new AffineTransform();
-        at.rotate(Math.PI / 2);
-//        AffineTransform at = AffineTransform.getQuadrantRotateInstance(1);
-        gd.setTransform(at);
-        gd.drawString("Best total distance", 300, -3);
-        at = AffineTransform.getQuadrantRotateInstance(0);
-        gd.setTransform(at);
+        AffineTransform orig = gd.getTransform();
+        gd.rotate(-Math.PI/2);
+        gd.setColor(Color.BLACK);
+        gd.drawString("Best total distance", -450, 15);
+        gd.setTransform(orig);
+
         double max= Math.ceil(gen_Best.stream().max(Double::compare).isPresent()? gen_Best.stream().max(Double::compare).get():0.0);
         double min= gen_Best.stream().min(Double::compare).isPresent()? gen_Best.stream().min(Double::compare).get():0.0;
+
 
         double y = min;
         int x = no_Gen / 10;
@@ -74,8 +75,8 @@ class myLinechartPanel extends JPanel{
         double pointy1;
         double pointy2;
         for(int num=0; num<gen_Best.size()-1; num++){
-            pointy1 = 750 - ((gen_Best.get(num) - min)/(max-min) * 700 +70);
-            pointy2 = 750 - ((gen_Best.get(num+1) - min)/(max-min) * 700 +70);
+            pointy1 = 700 - ((gen_Best.get(num) - min)/(max-min) * 700) +50;
+            pointy2 = 700 - ((gen_Best.get(num+1) - min)/(max-min) * 700) +50;
             //Drawing point
             gd.setStroke(new BasicStroke(8));
             gd.setColor(Color.PINK);
