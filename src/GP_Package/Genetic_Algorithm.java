@@ -70,8 +70,8 @@ public class Genetic_Algorithm {
             }
             Population = new ArrayList<>(sortPop(Population));
             // output current best chromosome
-            //if(i%500==0||i==Gen)
-                System.out.println( i + " " + Population.get(0).getFitness()+" "+averageFitness/popSize);
+            System.out.println( i + " " + Population.get(0).getFitness()+" "+averageFitness/popSize);
+            //prints route in the last generation
             if(i==Gen)
                 System.out.println( Population.get(0).getPath()+" " + i + " " + Population.get(0).getFitness()+" "+averageFitness/popSize);
             //Store generation best in an array for making future graph.
@@ -242,6 +242,7 @@ public class Genetic_Algorithm {
         }
         return TSpop;
     }
+    //roulette wheel
     private static ArrayList<Chromosome> rouletteWheelSelection(List<Chromosome> population) {
         ArrayList<Chromosome> selectedPopulation = new ArrayList<>();
         double[] prob = new double[population.size()];

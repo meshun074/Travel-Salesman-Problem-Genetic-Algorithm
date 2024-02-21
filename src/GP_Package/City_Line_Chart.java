@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 public class City_Line_Chart {
     public static void DrawChart(ArrayList<String> path, ArrayList<City> cities, String title){
+        // create window for drawing graph
         JFrame frame = new JFrame(title);
         frame.setSize(800,800);
         myPanel panel = new myPanel(cities, path);
@@ -43,6 +44,7 @@ class myPanel extends JPanel{
         City city2;
         double max = Max(cities);
         scaleXY(cities, max);
+        //Drawing points and lines for graph
         for(int i=0; i<path.size(); i++){
             if(i==path.size()-1) {
                 city1 = cities.get(Integer.parseInt(path.get(i)));
@@ -62,7 +64,7 @@ class myPanel extends JPanel{
             gd.draw(new Line2D.Double( city1.getX_axis(),city1.getY_axis(),city2.getX_axis(),city2.getY_axis()));
         }
     }
-
+// gets the maximum x or y coordinate
     private double Max(ArrayList<City> cities) {
         double max =0.0;
         for (City c: cities)
@@ -73,6 +75,7 @@ class myPanel extends JPanel{
         return max;
     }
 
+    // Scale coordination to graph dimension
     private void scaleXY(ArrayList<City> cities, double max) {
         DecimalFormat df = new DecimalFormat("#.00");
         for (City c: cities){

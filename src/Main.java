@@ -5,11 +5,9 @@ import GP_Package.Genetic_Algorithm;
 public class Main {
     public static void main(String[] args) {
         //Start Genetic algorithm by taking as input,
-        // population size, Tournament selection rate, crossover rate, mutation rate and
+        // population size, Tournament selection rate, crossover rate, mutation rate, elitism and
         // number of generations and the file with the encrypted text.
-        //Best parameters for Data3: 80,4, 1.0F,0.1F,50000,data3.txt :- Number of generations can be tested further
-        //Best parameters for Data1: 100,5, 1.0F,0.1F,1000,data1.txt :- Number of generations can be tested further
-        // best parameter data2: 300,3, 1.0F,0.0F,110,"data2.tx
+        // elitism less than 1 wil be converted to % and equal or more than will be taken as the number of chromosomes
         Genetic_Algorithm ga1 = new Genetic_Algorithm(300,3, 1.0F,0.0F, 1F,110,"data2.txt");
         ga1.start_GA();
     }
